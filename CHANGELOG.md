@@ -19,6 +19,17 @@ below these notes.
 
 ## Unreleased
 
+## v0.1.20 — 2026-10-10
+
+### Added
+
+- **New `coverage-reel` skill: a coverage dashboard and a motion-designed highlight reel from your real press clips.** Give it a coverage CSV and a short brand file. Each article is captured with `press-clip` and checked by a separate reviewer agent. The skill then writes a source-linked HTML dashboard and a silent MP4. In the reel, each real article page drifts in, scrolls to the sentence that names the client, zooms in and highlights it, with the outlet, date and link on screen the whole time. Formats: `landscape` 1920×1080, `portrait` 1080×1350, `vertical` 1080×1920 and `square` 1080×1080. The video is encoded inside the user's own Chrome or Edge with WebCodecs and written by a small built-in MP4 muxer, so there is no ffmpeg and no new dependency. Motion rules are checked as lints, and the renderer refuses to export if one fails (frozen camera, uniform shot lengths, overshoot, upscaled captures, text held too briefly to read, a highlight leaving the card). Metrics are labelled calculated, sourced or unavailable; reach appears only with a source link, and blank publish dates are never filled from the page. Local agents only.
+- **`press-clip` animation assets.** New flags `--mention`, `--assets <dir>`, `--scale 2|3` and `--pick <n>` write the article top, strip tiles, the mention close-up, a transparent masthead and a versioned `clip.json` with page metadata (each value with its source), logo resolution, asset rectangles, ranked mentions with per-line rectangles, and warnings. Existing flags and outputs are unchanged.
+
+### Changed
+
+- **`press-clip` captures are cleaner on real pages, with no per-publisher selectors.** It pins the article root before scrolling, anchored on the h1 that matches the page's headline; stops next-article loaders; hides fixed and sticky chrome and releases cookie-dialog scroll locks; forces lazy images to load; freezes animated SVG mastheads on their fullest frame; never repeats content past Chrome's capture limit; and stamps the outlet logo in its own colours instead of recolouring it. Bot-challenge pages now exit with code 3 and write nothing.
+
 ### Fixed
 
 - Docs and the `news-search` skill now state the real Medialyst free tier: 100 free credits (about 10,000 news searches at 0.01 credits each), not 300.
