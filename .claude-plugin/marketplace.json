@@ -11,7 +11,7 @@
       "source": "./plugins/newsjack",
       "displayName": "Newsjack",
       "description": "31 open-source PR and AI-visibility skills for strategy, monitoring, media research, pitching, fact-checking, and coverage reporting.",
-      "version": "0.1.20",
+      "version": "0.1.21",
       "author": {
         "name": "Elvis Sun"
       },
