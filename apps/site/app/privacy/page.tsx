@@ -5,7 +5,7 @@ import { Footer } from "../components/footer";
 import { Nav } from "../components/nav";
 
 const LAST_UPDATED = "2026-10-17";
-const CONTACT_EMAIL = "elvis@medialyst.ai";
+const CONTACT_EMAIL = "newsjack@elvisun.com";
 
 export const metadata: Metadata = pageMetadata({
   title: "Privacy policy",

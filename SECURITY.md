@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in newsjack — in the CLI, the hosted substrate, the install flow, or any related code — **please report it privately** before public disclosure.
 
-**Email:** elvis@medialyst.ai
+**Email:** newsjack@elvisun.com
 **Subject prefix:** `[newsjack security]`
 
 Please include:

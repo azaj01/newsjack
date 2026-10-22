@@ -2,7 +2,7 @@
   "name": "newsjack",
   "owner": {
     "name": "Elvis Sun",
-    "email": "gmail@elvisun.com"
+    "email": "newsjack@elvisun.com"
   },
   "description": "Newsjack — 31 open-source PR and AI-visibility skills for coding agents.",
   "plugins": [

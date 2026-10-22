@@ -41,4 +41,4 @@ If you're adding a new skill under `skills/<skill-name>/`:
 
 Contributors are expected to engage respectfully and in good faith. Be direct, constructive, and specific in feedback; do not direct personal attacks at other contributors. Maintainers reserve the right to remove comments, commits, or contributors that violate this standard.
 
-To report a concern, contact elvis@medialyst.ai.
+To report a concern, contact newsjack@elvisun.com.
