@@ -19,6 +19,10 @@ below these notes.
 
 ## Unreleased
 
+### Changed
+
+- The Newsjack plugin now includes a complete skill and Medialyst MCP reference, plugin metadata and icon, fixed Slack delivery commands, clearer journalist-contact privacy details, and stricter press-clip access rules. The packaged MCP configuration and skills are regular files, with sync and validation checks that keep them aligned with their canonical sources and the published skill catalog.
+
 ## v0.1.20 — 2026-10-10
 
 ### Added
